@@ -17,6 +17,8 @@
 # 02111-1307, USA.
 #
 
+import sys
+from fnmatch import fnmatch
 import zipfile
 import shutil
 import os
@@ -53,16 +55,27 @@ def process_zipfile(filename, parent_path, callback):
 	zf.close()
 
 def process_all_zips(path, callback):
+
+	if len(sys.argv) > 1:
+		pattern = sys.argv[1]
+	else:
+		pattern = "*"
+
 	for dirpath, dirnames, filenames in os.walk(path):
 		for filename in filenames:
 			if not filename.endswith(".zip"):
 				continue
 
+			zippath = os.path.join(dirpath, filename)
+
+			if not fnmatch(os.path.relpath(zippath, path), pattern):
+				continue
+
 			try:
-				zippath = os.path.join(dirpath, filename)
 				process_zipfile(zippath, path, callback)
 			except KeyboardInterrupt:
-				raise KeyboardInterrupt()
+				print "*** Abort due to keyboard interrupt"
+				return
 			except Exception as e:
 				print e
 
