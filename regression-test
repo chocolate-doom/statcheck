@@ -64,6 +64,7 @@ def print_result(zipfile_path, lmpname, success):
 # Run the specified demo and check the output is correct.
 
 def process_lmp(gametype, zipfile_path, zf, lmpname):
+	global passed, failed
 
 	gamepath, exe = GAME_PATHS[gametype]
 	iwad = os.path.join(gamepath, "%s.wad" % gametype)
@@ -87,11 +88,20 @@ def process_lmp(gametype, zipfile_path, zf, lmpname):
 		success = check_output(relpath, lmpname)
 
 		print_result(relpath, lmpname, success)
+
+		if success:
+			passed += 1
+		else:
+			failed += 1
 	finally:
 		if os.path.exists(lmpname):
 			os.remove(lmpname)
 		if os.path.exists(OUTPUT_FILENAME):
 			os.remove(OUTPUT_FILENAME)
 
+passed, failed = 0, 0
+
 process_all_zips(COMPETN_PATH, process_lmp)
+
+print "%i demo(s) passed, %i demo(s) failed." % (passed, failed)
 
