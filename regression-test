@@ -60,6 +60,7 @@ def print_result(zipfile_path, lmpname, success):
 		success_string = RED + "FAIL" + COLOR_END
 
 	print "%-50s%-15s%s" % (zipfile_path, lmpname, success_string)
+	sys.stdout.flush()
 
 # Run the specified demo and check the output is correct.
 
