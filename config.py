@@ -40,5 +40,5 @@ PORT_EXE = "chocolate-doom"
 
 # Extra arguments to pass to the source port.
 
-PORT_OPTIONS = "-nodraw -nosound -window -geometry 256x200"
+PORT_OPTIONS = "-nogui -nodraw -nosound -window -geometry 256x200"
 
