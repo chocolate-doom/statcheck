@@ -1,0 +1,22 @@
+===========================================
+E1M1 / MAP01
+===========================================
+
+Time: 0:17 (par: 0:30)
+
+Player 1 (Green):
+	Kills: 6 / 29 (20%)
+	Items: 3 / 38 (7%)
+	Secrets: 0 / 3 (0%)
+Player 2 (Indigo):
+	Kills: 4 / 29 (13%)
+	Items: 1 / 38 (2%)
+	Secrets: 3 / 3 (100%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

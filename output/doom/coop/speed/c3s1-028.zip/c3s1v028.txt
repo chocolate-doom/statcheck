@@ -1,0 +1,66 @@
+===========================================
+E3M1
+===========================================
+
+Time: 0:28 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 8 / 26 (30%)
+	Items: 2 / 6 (33%)
+	Secrets: 0 / 1 (0%)
+Player 2 (Indigo):
+	Kills: 2 / 26 (7%)
+	Items: 0 / 6 (0%)
+	Secrets: 0 / 1 (0%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E3M2
+===========================================
+
+Time: 0:15 (par: 0:45)
+
+Player 1 (Green):
+	Kills: 0 / 44 (0%)
+	Items: 0 / 15 (0%)
+	Secrets: 0 / 3 (0%)
+Player 2 (Indigo):
+	Kills: 1 / 44 (2%)
+	Items: 0 / 15 (0%)
+	Secrets: 1 / 3 (33%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E3M3
+===========================================
+
+Time: 0:32 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 1 / 57 (1%)
+	Items: 0 / 7 (0%)
+	Secrets: 0 / 6 (0%)
+Player 2 (Indigo):
+	Kills: 15 / 57 (26%)
+	Items: 0 / 7 (0%)
+	Secrets: 1 / 6 (16%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

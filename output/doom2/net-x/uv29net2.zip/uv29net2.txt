@@ -1,0 +1,22 @@
+===========================================
+MAP29
+===========================================
+
+Time: 5:35 (par: 5:00)
+
+Player 1 (Green):
+	Kills: 43 / 107 (40%)
+	Items: 7 / 25 (28%)
+	Secrets: 0
+Player 2 (Indigo):
+	Kills: 48 / 107 (44%)
+	Items: 17 / 25 (68%)
+	Secrets: 0
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

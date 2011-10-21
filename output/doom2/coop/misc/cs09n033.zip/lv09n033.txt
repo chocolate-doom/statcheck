@@ -1,0 +1,32 @@
+===========================================
+MAP09
+===========================================
+
+Time: 0:33 (par: 4:30)
+
+Player 1 (Green):
+	Kills: 0
+	Items: 0 / 47 (0%)
+	Secrets: 0 / 6 (0%)
+Player 2 (Indigo):
+	Kills: 0
+	Items: 1 / 47 (2%)
+	Secrets: 0 / 6 (0%)
+Player 3 (Brown):
+	Kills: 0
+	Items: 1 / 47 (2%)
+	Secrets: 0 / 6 (0%)
+Player 4 (Red):
+	Kills: 0
+	Items: 2 / 47 (4%)
+	Secrets: 0 / 6 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+

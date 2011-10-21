@@ -1,0 +1,154 @@
+===========================================
+E4M1
+===========================================
+
+Time: 0:33 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 15 / 63 (23%)
+	Items: 7 / 24 (29%)
+	Secrets: 0 / 2 (0%)
+Player 2 (Indigo):
+	Kills: 15 / 63 (23%)
+	Items: 7 / 24 (29%)
+	Secrets: 1 / 2 (50%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E4M2
+===========================================
+
+Time: 0:37 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 9 / 76 (11%)
+	Items: 9 / 22 (40%)
+	Secrets: 1 / 3 (33%)
+Player 2 (Indigo):
+	Kills: 16 / 76 (21%)
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E4M3
+===========================================
+
+Time: 0:17 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 0 / 140 (0%)
+	Items: 2 / 40 (5%)
+	Secrets: 0 / 22 (0%)
+Player 2 (Indigo):
+	Kills: 7 / 140 (5%)
+	Items: 0 / 40 (0%)
+	Secrets: 0 / 22 (0%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E4M4
+===========================================
+
+Time: 0:35 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 9 / 60 (15%)
+	Items: 5 / 26 (19%)
+	Secrets: 0 / 2 (0%)
+Player 2 (Indigo):
+	Kills: 4 / 60 (6%)
+	Items: 14 / 26 (53%)
+	Secrets: 0 / 2 (0%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E4M5
+===========================================
+
+Time: 0:36 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 9 / 73 (12%)
+	Items: 3 / 29 (10%)
+	Secrets: 1 / 2 (50%)
+Player 2 (Indigo):
+	Kills: 11 / 73 (15%)
+	Items: 1 / 29 (3%)
+	Secrets: 0 / 2 (0%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E4M6
+===========================================
+
+Time: 0:55 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 21 / 97 (21%)
+	Items: 0 / 4 (0%)
+	Secrets: 0 / 3 (0%)
+Player 2 (Indigo):
+	Kills: 15 / 97 (15%)
+	Items: 0 / 4 (0%)
+	Secrets: 1 / 3 (33%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
+===========================================
+E4M7
+===========================================
+
+Time: 0:26 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 12 / 97 (12%)
+	Items: 2 / 18 (11%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 11 / 97 (11%)
+	Items: 7 / 18 (38%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

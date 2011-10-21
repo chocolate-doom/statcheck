@@ -1,0 +1,22 @@
+===========================================
+MAP25
+===========================================
+
+Time: 0:57 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 19 / 103 (18%)
+	Items: 1 / 2 (50%)
+	Secrets: 1 / 2 (50%)
+Player 2 (Indigo):
+	Kills: 5 / 103 (4%)
+	Items: 0 / 2 (0%)
+	Secrets: 1 / 2 (50%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

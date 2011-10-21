@@ -1,0 +1,22 @@
+===========================================
+E4M9
+===========================================
+
+Time: 0:19 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 1 / 85 (1%)
+	Items: 1 / 15 (6%)
+	Secrets: 1 / 2 (50%)
+Player 2 (Indigo):
+	Kills: 8 / 85 (9%)
+	Items: 1 / 15 (6%)
+	Secrets: 1 / 2 (50%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

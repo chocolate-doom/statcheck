@@ -1,0 +1,22 @@
+===========================================
+MAP18
+===========================================
+
+Time: 2:11 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 92 / 178 (51%)
+	Items: 28 / 183 (15%)
+	Secrets: 3 / 4 (75%)
+Player 2 (Indigo):
+	Kills: 59 / 178 (33%)
+	Items: 43 / 183 (23%)
+	Secrets: 1 / 4 (25%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+
+import shutil
+import os
+from config import *
+from common import *
+
+def write_batch_file(path, exe, lmpname):
+
+	# Cut off .lmp:
+	parts = lmpname.split(".")
+	lmpname = parts[0]
+
+	filename = os.path.join(path, "tmp.bat")
+
+	f = open(filename, 'w')
+	f.write("statdump.exe -o out.txt %s -nosound -nodraw -timedemo %s\n" % (exe, lmpname))
+	f.close()
+
+	return filename
+
+def make_parent_dirs(path):
+	if path != "" and not os.path.exists(path):
+		make_parent_dirs(os.path.dirname(path))
+		os.mkdir(path)
+
+def save_stats(zipfile_path, lmpname, stats_output):
+
+	filename = lmpname.lower().replace(".lmp", ".txt")
+
+	relpath = os.path.relpath(zipfile_path, COMPETN_PATH)
+	savepath = os.path.join("output", relpath, filename)
+
+	make_parent_dirs(os.path.dirname(savepath))
+	shutil.copy(stats_output, savepath)
+
+def process_lmp(gametype, zipfile_path, zf, lmpname):
+
+	gamepath, exe = GAME_PATHS[gametype]
+	bat_file = write_batch_file(gamepath, exe, lmpname)
+	stats_output = os.path.join(gamepath, "OUT.TXT")
+
+	try:
+		zf.extract(lmpname, gamepath)
+
+		os.system("%s -exit %s" % (DOSBOX, bat_file))
+
+		save_stats(zipfile_path, lmpname, stats_output)
+	finally:
+		os.remove(os.path.join(gamepath, lmpname))
+		os.remove(bat_file)
+		os.remove(stats_output)
+
+process_all_zips(COMPETN_PATH, process_lmp)
+

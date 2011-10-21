@@ -1,0 +1,22 @@
+===========================================
+E3M6
+===========================================
+
+Time: 0:07 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 0 / 94 (0%)
+	Items: 0 / 24 (0%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 0 / 94 (0%)
+	Items: 0 / 24 (0%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+

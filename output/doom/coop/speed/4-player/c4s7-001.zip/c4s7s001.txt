@@ -1,0 +1,32 @@
+===========================================
+E4M7
+===========================================
+
+Time: 0:01 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 0 / 97 (0%)
+	Items: 0 / 18 (0%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 0 / 97 (0%)
+	Items: 0 / 18 (0%)
+	Secrets: 0 / 4 (0%)
+Player 3 (Brown):
+	Kills: 0 / 97 (0%)
+	Items: 0 / 18 (0%)
+	Secrets: 0 / 4 (0%)
+Player 4 (Red):
+	Kills: 0 / 97 (0%)
+	Items: 0 / 18 (0%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	Brown	Red	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	0	
+	Indigo	|0	0	0	0	
+	Brown	|0	0	0	0	
+	Red	|0	0	0	0	
+		|
+	     KILLERS
+

@@ -1,0 +1,864 @@
+===========================================
+MAP01
+===========================================
+
+Time: 0:12 (par: 0:30)
+
+Player 1 (Green):
+	Kills: 2 / 27 (7%)
+	Items: 1 / 9 (11%)
+	Secrets: 0 / 5 (0%)
+Player 2 (Indigo):
+	Kills: 5 / 27 (18%)
+	Items: 0 / 9 (0%)
+	Secrets: 0 / 5 (0%)
+Player 3 (Brown):
+	Kills: 1 / 27 (3%)
+	Items: 0 / 9 (0%)
+	Secrets: 1 / 5 (20%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP02
+===========================================
+
+Time: 0:46 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 18 / 90 (20%)
+	Items: 6 / 21 (28%)
+	Secrets: 0 / 1 (0%)
+Player 2 (Indigo):
+	Kills: 23 / 90 (25%)
+	Items: 7 / 21 (33%)
+	Secrets: 0 / 1 (0%)
+Player 3 (Brown):
+	Kills: 21 / 90 (23%)
+	Items: 3 / 21 (14%)
+	Secrets: 1 / 1 (100%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP03
+===========================================
+
+Time: 0:43 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 22 / 78 (28%)
+	Items: 1 / 10 (10%)
+	Secrets: 0 / 1 (0%)
+Player 2 (Indigo):
+	Kills: 14 / 78 (17%)
+	Items: 1 / 10 (10%)
+	Secrets: 0 / 1 (0%)
+Player 3 (Brown):
+	Kills: 0 / 78 (0%)
+	Items: 1 / 10 (10%)
+	Secrets: 1 / 1 (100%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP04
+===========================================
+
+Time: 0:26 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 19 / 55 (34%)
+	Items: 17 / 35 (48%)
+	Secrets: 1 / 3 (33%)
+Player 2 (Indigo):
+	Kills: 10 / 55 (18%)
+	Items: 1 / 35 (2%)
+	Secrets: 0 / 3 (0%)
+Player 3 (Brown):
+	Kills: 8 / 55 (14%)
+	Items: 0 / 35 (0%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP05
+===========================================
+
+Time: 0:35 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 11 / 118 (9%)
+	Items: 1 / 7 (14%)
+	Secrets: 0 / 3 (0%)
+Player 2 (Indigo):
+	Kills: 13 / 118 (11%)
+	Items: 1 / 7 (14%)
+	Secrets: 1 / 3 (33%)
+Player 3 (Brown):
+	Kills: 5 / 118 (4%)
+	Items: 1 / 7 (14%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP06
+===========================================
+
+Time: 1:09 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 28 / 112 (25%)
+	Items: 0 / 17 (0%)
+	Secrets: 1 / 3 (33%)
+Player 2 (Indigo):
+	Kills: 29 / 112 (25%)
+	Items: 5 / 17 (29%)
+	Secrets: 1 / 3 (33%)
+Player 3 (Brown):
+	Kills: 9 / 112 (8%)
+	Items: 0 / 17 (0%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP07
+===========================================
+
+Time: 0:29 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 5 / 19 (26%)
+	Items: 1 / 7 (14%)
+	Secrets: 0 / 1 (0%)
+Player 2 (Indigo):
+	Kills: 7 / 19 (36%)
+	Items: 0 / 7 (0%)
+	Secrets: 1 / 1 (100%)
+Player 3 (Brown):
+	Kills: 7 / 19 (36%)
+	Items: 2 / 7 (28%)
+	Secrets: 0 / 1 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP08
+===========================================
+
+Time: 0:35 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 22 / 142 (15%)
+	Items: 0 / 5 (0%)
+	Secrets: 0 / 7 (0%)
+Player 2 (Indigo):
+	Kills: 18 / 142 (12%)
+	Items: 1 / 5 (20%)
+	Secrets: 1 / 7 (14%)
+Player 3 (Brown):
+	Kills: 8 / 142 (5%)
+	Items: 1 / 5 (20%)
+	Secrets: 0 / 7 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP09
+===========================================
+
+Time: 0:59 (par: 4:30)
+
+Player 1 (Green):
+	Kills: 41 / 205 (20%)
+	Items: 12 / 47 (25%)
+	Secrets: 0 / 6 (0%)
+Player 2 (Indigo):
+	Kills: 19 / 205 (9%)
+	Items: 1 / 47 (2%)
+	Secrets: 0 / 6 (0%)
+Player 3 (Brown):
+	Kills: 6 / 205 (2%)
+	Items: 1 / 47 (2%)
+	Secrets: 0 / 6 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP10
+===========================================
+
+Time: 0:41 (par: 1:30)
+
+Player 1 (Green):
+	Kills: 34 / 261 (13%)
+	Items: 6 / 100 (6%)
+	Secrets: 4 / 18 (22%)
+Player 2 (Indigo):
+	Kills: 10 / 261 (3%)
+	Items: 2 / 100 (2%)
+	Secrets: 3 / 18 (16%)
+Player 3 (Brown):
+	Kills: 7 / 261 (2%)
+	Items: 19 / 100 (19%)
+	Secrets: 2 / 18 (11%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP11
+===========================================
+
+Time: 0:56 (par: 3:30)
+
+Player 1 (Green):
+	Kills: 9 / 72 (12%)
+	Items: 4 / 22 (18%)
+	Secrets: 2 / 3 (66%)
+Player 2 (Indigo):
+	Kills: 13 / 72 (18%)
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 3 (0%)
+Player 3 (Brown):
+	Kills: 6 / 72 (8%)
+	Items: 1 / 22 (4%)
+	Secrets: 0 / 3 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP12
+===========================================
+
+Time: 0:48 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 16 / 101 (15%)
+	Items: 1 / 5 (20%)
+	Secrets: 1 / 4 (25%)
+Player 2 (Indigo):
+	Kills: 8 / 101 (7%)
+	Items: 1 / 5 (20%)
+	Secrets: 0 / 4 (0%)
+Player 3 (Brown):
+	Kills: 2 / 101 (1%)
+	Items: 0 / 5 (0%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP13
+===========================================
+
+Time: 1:22 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 22 / 111 (19%)
+	Items: 11 / 61 (18%)
+	Secrets: 1 / 8 (12%)
+Player 2 (Indigo):
+	Kills: 12 / 111 (10%)
+	Items: 4 / 61 (6%)
+	Secrets: 0 / 8 (0%)
+Player 3 (Brown):
+	Kills: 10 / 111 (9%)
+	Items: 7 / 61 (11%)
+	Secrets: 1 / 8 (12%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP14
+===========================================
+
+Time: 0:44 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 16 / 78 (20%)
+	Items: 0 / 2 (0%)
+	Secrets: 0
+Player 2 (Indigo):
+	Kills: 16 / 78 (20%)
+	Items: 1 / 2 (50%)
+	Secrets: 0
+Player 3 (Brown):
+	Kills: 13 / 78 (16%)
+	Items: 0 / 2 (0%)
+	Secrets: 0
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP15
+===========================================
+
+Time: 0:26 (par: 3:30)
+
+Player 1 (Green):
+	Kills: 8 / 169 (4%)
+	Items: 0 / 9 (0%)
+	Secrets: 0 / 11 (0%)
+Player 2 (Indigo):
+	Kills: 2 / 169 (1%)
+	Items: 0 / 9 (0%)
+	Secrets: 1 / 11 (9%)
+Player 3 (Brown):
+	Kills: 8 / 169 (4%)
+	Items: 1 / 9 (11%)
+	Secrets: 1 / 11 (9%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP31
+===========================================
+
+Time: 0:39 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 10 / 149 (6%)
+	Items: 0 / 64 (0%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 5 / 149 (3%)
+	Items: 2 / 64 (3%)
+	Secrets: 3 / 4 (75%)
+Player 3 (Brown):
+	Kills: 0 / 149 (0%)
+	Items: 1 / 64 (1%)
+	Secrets: 1 / 4 (25%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP32
+===========================================
+
+Time: 0:18 (par: 0:30)
+
+Player 1 (Green):
+	Kills: 1 / 33 (3%)
+	Items: 2 / 3 (66%)
+	Secrets: 2 / 6 (33%)
+Player 2 (Indigo):
+	Kills: 5 / 33 (15%)
+	Items: 1 / 3 (33%)
+	Secrets: 1 / 6 (16%)
+Player 3 (Brown):
+	Kills: 0 / 33 (0%)
+	Items: 0 / 3 (0%)
+	Secrets: 0 / 6 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP16
+===========================================
+
+Time: 0:37 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 13 / 161 (8%)
+	Items: 1 / 5 (20%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 4 / 161 (2%)
+	Items: 1 / 5 (20%)
+	Secrets: 3 / 4 (75%)
+Player 3 (Brown):
+	Kills: 26 / 161 (16%)
+	Items: 0 / 5 (0%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP17
+===========================================
+
+Time: 2:16 (par: 7:00)
+
+Player 1 (Green):
+	Kills: 22 / 126 (17%)
+	Items: 15 / 112 (13%)
+	Secrets: 0 / 3 (0%)
+Player 2 (Indigo):
+	Kills: 42 / 126 (33%)
+	Items: 35 / 112 (31%)
+	Secrets: 0 / 3 (0%)
+Player 3 (Brown):
+	Kills: 12 / 126 (9%)
+	Items: 7 / 112 (6%)
+	Secrets: 1 / 3 (33%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP18
+===========================================
+
+Time: 0:34 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 5 / 178 (2%)
+	Items: 48 / 183 (26%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 4 / 178 (2%)
+	Items: 13 / 183 (7%)
+	Secrets: 0 / 4 (0%)
+Player 3 (Brown):
+	Kills: 0 / 178 (0%)
+	Items: 22 / 183 (12%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP19
+===========================================
+
+Time: 0:47 (par: 3:30)
+
+Player 1 (Green):
+	Kills: 10 / 199 (5%)
+	Items: 2 / 58 (3%)
+	Secrets: 2 / 9 (22%)
+Player 2 (Indigo):
+	Kills: 33 / 199 (16%)
+	Items: 6 / 58 (10%)
+	Secrets: 1 / 9 (11%)
+Player 3 (Brown):
+	Kills: 2 / 199 (1%)
+	Items: 4 / 58 (6%)
+	Secrets: 1 / 9 (11%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP20
+===========================================
+
+Time: 0:45 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 6 / 72 (8%)
+	Items: 5 / 45 (11%)
+	Secrets: 1 / 7 (14%)
+Player 2 (Indigo):
+	Kills: 3 / 72 (4%)
+	Items: 1 / 45 (2%)
+	Secrets: 1 / 7 (14%)
+Player 3 (Brown):
+	Kills: 5 / 72 (6%)
+	Items: 0 / 45 (0%)
+	Secrets: 1 / 7 (14%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP21
+===========================================
+
+Time: 0:51 (par: 4:00)
+
+Player 1 (Green):
+	Kills: 2 / 124 (1%)
+	Items: 6 / 18 (33%)
+	Secrets: 0
+Player 2 (Indigo):
+	Kills: 35 / 124 (28%)
+	Items: 7 / 18 (38%)
+	Secrets: 0
+Player 3 (Brown):
+	Kills: 4 / 124 (3%)
+	Items: 5 / 18 (27%)
+	Secrets: 0
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP22
+===========================================
+
+Time: 0:52 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 16 / 56 (28%)
+	Items: 1 / 8 (12%)
+	Secrets: 1 / 3 (33%)
+Player 2 (Indigo):
+	Kills: 14 / 56 (25%)
+	Items: 5 / 8 (62%)
+	Secrets: 1 / 3 (33%)
+Player 3 (Brown):
+	Kills: 7 / 56 (12%)
+	Items: 0 / 8 (0%)
+	Secrets: 1 / 3 (33%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP23
+===========================================
+
+Time: 1:09 (par: 3:00)
+
+Player 1 (Green):
+	Kills: 8 / 106 (7%)
+	Items: 0 / 22 (0%)
+	Secrets: 0 / 2 (0%)
+Player 2 (Indigo):
+	Kills: 12 / 106 (11%)
+	Items: 5 / 22 (22%)
+	Secrets: 1 / 2 (50%)
+Player 3 (Brown):
+	Kills: 28 / 106 (26%)
+	Items: 1 / 22 (4%)
+	Secrets: 1 / 2 (50%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP24
+===========================================
+
+Time: 1:08 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 10 / 151 (6%)
+	Items: 0 / 49 (0%)
+	Secrets: 0 / 4 (0%)
+Player 2 (Indigo):
+	Kills: 0 / 151 (0%)
+	Items: 0 / 49 (0%)
+	Secrets: 0 / 4 (0%)
+Player 3 (Brown):
+	Kills: 13 / 151 (8%)
+	Items: 11 / 49 (22%)
+	Secrets: 0 / 4 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP25
+===========================================
+
+Time: 1:03 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 20 / 103 (19%)
+	Items: 1 / 2 (50%)
+	Secrets: 1 / 2 (50%)
+Player 2 (Indigo):
+	Kills: 8 / 103 (7%)
+	Items: 0 / 2 (0%)
+	Secrets: 1 / 2 (50%)
+Player 3 (Brown):
+	Kills: 17 / 103 (16%)
+	Items: 0 / 2 (0%)
+	Secrets: 0 / 2 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP26
+===========================================
+
+Time: 0:58 (par: 5:00)
+
+Player 1 (Green):
+	Kills: 1 / 73 (1%)
+	Items: 4 / 58 (6%)
+	Secrets: 1 / 4 (25%)
+Player 2 (Indigo):
+	Kills: 22 / 73 (30%)
+	Items: 9 / 58 (15%)
+	Secrets: 0 / 4 (0%)
+Player 3 (Brown):
+	Kills: 8 / 73 (10%)
+	Items: 1 / 58 (1%)
+	Secrets: 1 / 4 (25%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP27
+===========================================
+
+Time: 1:07 (par: 5:30)
+
+Player 1 (Green):
+	Kills: 29 / 163 (17%)
+	Items: 5 / 93 (5%)
+	Secrets: 0 / 8 (0%)
+Player 2 (Indigo):
+	Kills: 6 / 163 (3%)
+	Items: 3 / 93 (3%)
+	Secrets: 0 / 8 (0%)
+Player 3 (Brown):
+	Kills: 0 / 163 (0%)
+	Items: 0 / 93 (0%)
+	Secrets: 0 / 8 (0%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP28
+===========================================
+
+Time: 1:05 (par: 7:00)
+
+Player 1 (Green):
+	Kills: 11 / 111 (9%)
+	Items: 5 / 25 (20%)
+	Secrets: 0 / 7 (0%)
+Player 2 (Indigo):
+	Kills: 9 / 111 (8%)
+	Items: 3 / 25 (12%)
+	Secrets: 2 / 7 (28%)
+Player 3 (Brown):
+	Kills: 3 / 111 (2%)
+	Items: 5 / 25 (20%)
+	Secrets: 1 / 7 (14%)
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP29
+===========================================
+
+Time: 1:47 (par: 5:00)
+
+Player 1 (Green):
+	Kills: 28 / 107 (26%)
+	Items: 14 / 25 (56%)
+	Secrets: 0
+Player 2 (Indigo):
+	Kills: 20 / 107 (18%)
+	Items: 5 / 25 (20%)
+	Secrets: 0
+Player 3 (Brown):
+	Kills: 7 / 107 (6%)
+	Items: 2 / 25 (8%)
+	Secrets: 0
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+
+===========================================
+MAP30
+===========================================
+
+Time: 0:43 (par: 3:00)
+
+Player 1 (Green):
+	Kills: 7 / 1 (700%)
+	Items: 3 / 9 (33%)
+	Secrets: 0
+Player 2 (Indigo):
+	Kills: 0 / 1 (0%)
+	Items: 1 / 9 (11%)
+	Secrets: 0
+Player 3 (Brown):
+	Kills: 1 / 1 (100%)
+	Items: 1 / 9 (11%)
+	Secrets: 0
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+

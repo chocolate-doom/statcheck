@@ -1,0 +1,27 @@
+===========================================
+MAP14
+===========================================
+
+Time: 0:18 (par: 2:30)
+
+Player 1 (Green):
+	Kills: 1 / 78 (1%)
+	Items: 0 / 2 (0%)
+	Secrets: 0
+Player 2 (Indigo):
+	Kills: 7 / 78 (8%)
+	Items: 0 / 2 (0%)
+	Secrets: 0
+Player 3 (Brown):
+	Kills: 1 / 78 (1%)
+	Items: 0 / 2 (0%)
+	Secrets: 0
+Frags:
+		Green	Indigo	Brown	
+		-------------------------------- VICTIMS
+	Green	|0	0	0	
+	Indigo	|0	0	0	
+	Brown	|0	0	0	
+		|
+	     KILLERS
+

@@ -1,0 +1,22 @@
+===========================================
+MAP08
+===========================================
+
+Time: 3:37 (par: 2:00)
+
+Player 1 (Green):
+	Kills: 49 / 142 (34%)
+	Items: 3 / 5 (60%)
+	Secrets: 1 / 7 (14%)
+Player 2 (Indigo):
+	Kills: 76 / 142 (53%)
+	Items: 1 / 5 (20%)
+	Secrets: 6 / 7 (85%)
+Frags:
+		Green	Indigo	
+		-------------------------------- VICTIMS
+	Green	|0	0	
+	Indigo	|0	0	
+		|
+	     KILLERS
+
