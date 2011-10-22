@@ -18,6 +18,14 @@
 # 02111-1307, USA.
 #
 
+# Vanilla Doom processing script.
+#
+# This script automatically goes through all the zip files in the
+# Compet-N tree, extracts them, and then launches Doom running inside
+# DOSbox to play back the demo. The game is run through statdump.exe
+# and the output recorded to a file. The file is then stored in the
+# output/ tree for future reference.
+
 import shutil
 import os
 from config import *

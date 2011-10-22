@@ -18,6 +18,15 @@
 # 02111-1307, USA.
 #
 
+# statchecker regression testing script.
+#
+# This script examines the zip files in the Compet-N tree, extracts
+# the demos and plays them back using the configured source port.
+# Statistics information is logged to a file using the -statdump
+# parameter and the output is compared with the reference version
+# for Vanilla Doom. A summary is outputted of the demos that pass
+# or fail this test.
+
 import os
 import sys
 from common import *
