@@ -42,3 +42,8 @@ PORT_EXE = "chocolate-doom"
 
 PORT_OPTIONS = "-nogui -nodraw -nosound -window -geometry 256x200"
 
+# Number of concurrent processes to spawn.
+# It's advisable to set this to 2*number of cores.
+
+CONCURRENT_PROCESSES = 2
+

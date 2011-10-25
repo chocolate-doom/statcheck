@@ -18,6 +18,9 @@
 #
 
 import sys
+import subprocess
+import fcntl
+from select import select
 from fnmatch import fnmatch
 import zipfile
 import shutil
@@ -110,6 +113,131 @@ class StatusApp(wx.App):
 	def OnIdle(self, event):
 		if not self.paused:
 			self.idle_callback()
+
+def set_nonblocking(fileno):
+	fl = fcntl.fcntl(fileno, fcntl.F_GETFL)
+	fcntl.fcntl(fileno, fcntl.F_SETFL, fl | os.O_NONBLOCK)
+
+class SubCommand:
+	def __init__(self, cmd):
+		cmd = cmd + "; echo __END__ > /dev/stderr"
+		self.p = subprocess.Popen(cmd, shell=True,
+		                          stdout=subprocess.PIPE,
+		                          stderr=subprocess.PIPE)
+		set_nonblocking(self.p.stdout.fileno())
+		set_nonblocking(self.p.stderr.fileno())
+		self.stdout = ""
+		self.stderr = ""
+		self.exit_code = None
+
+	def poll_output(self):
+		try:
+			self.stdout += self.p.stdout.read()
+		except IOError:
+			pass
+
+		try:
+			self.stderr += self.p.stderr.read()
+		except IOError:
+			pass
+
+	def poll(self):
+		if self.exit_code is None:
+			self.poll_output()
+
+			# Finished?
+
+			if self.stderr.endswith("__END__\n"):
+				self.stderr = self.stderr[:-8]
+				self.exit_code = self.p.wait()
+				self.p.stdout.close()
+				self.p.stderr.close()
+
+	def fds(self):
+		return (self.p.stdout.fileno(), self.p.stderr.fileno())
+
+	def has_completed(self):
+		return self.exit_code is not None
+
+# A pipeline of commands allows multiple commands to be run in parallel.
+
+class CommandPipeline:
+	def __init__(self, pipeline_size):
+		self.pipeline_size = pipeline_size
+		self.pipeline = []
+
+	# Return the number of processes that have not yet completed.
+
+	def active_processes(self):
+		result = 0
+
+		for p, callback in self.pipeline:
+			if not p.has_completed():
+				result += 1
+
+		return result
+
+	# Periodically service the queue. This checks for output and
+	# completions, and invokes the callback functions.
+
+	def poll(self):
+		for p, callback in self.pipeline:
+			p.poll()
+
+		# Check for completed commands and invoke callbacks.
+		# Callback is only invoked for a command when all
+		# previous commands have also completed.
+
+		while len(self.pipeline) > 0 \
+		  and self.pipeline[0][0].has_completed():
+			p, callback = self.pipeline[0]
+			self.pipeline = self.pipeline[1:]
+
+			callback(p.exit_code, p.stdout, p.stderr)
+
+	# Block until one of the subprocesses outputs something.
+
+	def select(self):
+		rlist = []
+
+		for p, callback in self.pipeline:
+			if not p.has_completed():
+				rlist += p.fds()
+
+		if len(rlist) > 0:
+			select(rlist, (), ())
+
+	# Block until there is space in the pipeline:
+
+	def wait_for_space(self):
+		while self.active_processes() >= self.pipeline_size:
+			self.select()
+			self.poll()
+
+	# Run the specified command, invoking the callback when the
+	# command completes.
+
+	def call(self, cmd, callback):
+
+		# Don't create more processes than will fit in the pipeline.
+		# Block until there is space.
+
+		self.wait_for_space()
+
+		p = SubCommand(cmd)
+
+		self.pipeline.append((p, callback))
+
+	# Block until all outstanding commands complete and callbacks
+	# are invoked.
+
+	def finish(self):
+		while self.active_processes() > 0:
+			self.select()
+			self.poll()
+
+	def is_empty(self):
+		return len(self.pipeline) == 0
 
 def identify_game_type(filename):
 

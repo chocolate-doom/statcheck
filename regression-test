@@ -36,8 +36,6 @@ GREEN = '\033[92m'
 RED = '\033[91m'
 COLOR_END = '\033[0m'
 
-OUTPUT_FILENAME = "out.txt"
-
 def read_file(filename):
 	result = []
 
@@ -49,15 +47,15 @@ def read_file(filename):
 
 	return "\n".join(lines)
 
-def check_output(zipfile_path, lmpname):
+def check_output(output_filename, zipfile_path, lmpname):
 	expected_file = os.path.join("output", zipfile_path,
 	                             lmpname.lower().replace(".lmp", ".txt"))
 
-	output = read_file(OUTPUT_FILENAME)
+	output = read_file(output_filename)
 	expected = read_file(expected_file)
 
 	if output != expected:
-		os.system("diff -u %s %s" % (expected_file, OUTPUT_FILENAME))
+		os.system("diff -u %s %s" % (expected_file, output_filename))
 
 	return output == expected
 
@@ -74,28 +72,33 @@ def print_result(zipfile_path, lmpname, success):
 # Run the specified demo and check the output is correct.
 
 def process_lmp(gametype, zipfile_path, zf, lmpname):
-	global passed, failed
+
+	global output_counter
 
 	gamepath, exe = GAME_PATHS[gametype]
 	iwad = os.path.join(gamepath, "%s.wad" % gametype)
 
-	try:
-		zf.extract(lmpname)
+	# Extract .lmp file. To avoid conflicts between concurrent
+	# tests, rename to a generated name.
 
-		if os.path.exists(OUTPUT_FILENAME):
-			os.remove(OUTPUT_FILENAME)
+	lmpname2 = "tst%i.lmp" % output_counter
+	zf.extract(lmpname)
+	os.rename(lmpname, lmpname2)
 
-		cmd = "%s %s" % (PORT_EXE, PORT_OPTIONS)
-		cmd += " -iwad %s" % iwad
-		cmd += " -timedemo %s" % lmpname
-		cmd += " -statdump %s" % OUTPUT_FILENAME
+	output_filename = "output-%i.txt" % output_counter
+	output_counter += 1
 
-		#print cmd
-		os.system(cmd + ">/dev/null 2>/dev/null")
+	cmd = "%s %s" % (PORT_EXE, PORT_OPTIONS)
+	cmd += " -iwad %s" % iwad
+	cmd += " -timedemo %s" % lmpname2
+	cmd += " -statdump %s" % output_filename
+
+	def process_complete(exit_code, stdout, stderr):
+		global passed, failed
 
 		relpath = os.path.relpath(zipfile_path, COMPETN_PATH)
 
-		success = check_output(relpath, lmpname)
+		success = check_output(output_filename, relpath, lmpname)
 
 		print_result(relpath, lmpname, success)
 
@@ -103,15 +106,19 @@ def process_lmp(gametype, zipfile_path, zf, lmpname):
 			passed += 1
 		else:
 			failed += 1
-	finally:
-		if os.path.exists(lmpname):
-			os.remove(lmpname)
-		if os.path.exists(OUTPUT_FILENAME):
-			os.remove(OUTPUT_FILENAME)
 
+		os.remove(lmpname2)
+		os.remove(output_filename)
+
+	pipeline.call(cmd, process_complete)
+
+output_counter = 0
 passed, failed = 0, 0
+pipeline = CommandPipeline(CONCURRENT_PROCESSES)
 
 process_all_zips(COMPETN_PATH, process_lmp)
+
+pipeline.finish()
 
 print "%i demo(s) passed, %i demo(s) failed." % (passed, failed)
 
