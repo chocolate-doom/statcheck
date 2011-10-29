@@ -30,7 +30,12 @@ GAME_PATHS = {
 	"plutonia": ("/home/me/final-doom-plutonia", "doom2.exe"),
 }
 
-# Paths for PWADs and associated games.
+# PWADs and associated games.
+# These should be placed in the same directory as the game (as configured
+# above).
+# Class_Ep.wad (Classic Episode) needs to be the "old" version (found
+# in the SDA as b-c/class_ep.zip) rather than the "new" version found
+# in the idgames archive.
 
 PWADS = {
 	"pwads/av": ("AV.WAD", "doom2"),
