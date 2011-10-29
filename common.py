@@ -280,6 +280,9 @@ def find_all_zips(path, pattern):
 			zippath = os.path.join(dirpath, filename)
 			relpath = os.path.relpath(zippath, path)
 
+			if identify_game_type(relpath) is None:
+				continue
+
 			if fnmatch(relpath, pattern):
 				result.append(relpath)
 
