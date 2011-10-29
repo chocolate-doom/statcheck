@@ -93,6 +93,9 @@ def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 	cmd += " -timedemo %s" % lmpname2
 	cmd += " -statdump %s" % output_filename
 
+	if pwad is not None:
+		cmd += " -file %s" % os.path.join(gamepath, pwad)
+
 	def process_complete(exit_code, stdout, stderr):
 		global passed, failed
 
