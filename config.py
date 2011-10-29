@@ -30,6 +30,17 @@ GAME_PATHS = {
 	"plutonia": ("/home/me/final-doom-plutonia", "doom2.exe"),
 }
 
+# Paths for PWADs and associated games.
+
+PWADS = {
+	"pwads/av": ("AV.WAD", "doom2"),
+	"pwads/class_ep": ("Class_Ep.wad", "doom"),
+	"pwads/hr": ("HR.WAD", "doom2"),
+	"pwads/mm": ("MM.WAD", "doom2"),
+	"pwads/mm2": ("MM2.WAD", "doom2"),
+	"pwads/requiem": ("REQUIEM.WAD", "doom2"),
+}
+
 # Path to the DOSbox executable.
 
 DOSBOX = "dosbox"

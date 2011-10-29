@@ -31,16 +31,23 @@ import os
 from config import *
 from common import *
 
-def write_batch_file(path, exe, lmpname):
+def write_batch_file(path, exe, lmpname, pwad):
 
 	# Cut off .lmp:
 	parts = lmpname.split(".")
 	lmpname = parts[0]
 
+	if pwad is None:
+		pwadparm = ""
+	else:
+		pwadparm = "-file %s" % pwad
+
 	filename = os.path.join(path, "tmp.bat")
 
 	f = open(filename, 'w')
-	f.write("statdump.exe -o out.txt %s -nosound -nodraw -timedemo %s\n" % (exe, lmpname))
+	f.write("stuffbuf !\n")
+	f.write("statdump.exe -o out.txt %s %s -nosound -nodraw -timedemo %s\n"
+	        % (exe, pwadparm, lmpname))
 	f.close()
 
 	return filename
@@ -60,10 +67,10 @@ def save_stats(zipfile_path, lmpname, stats_output):
 	make_parent_dirs(os.path.dirname(savepath))
 	shutil.copy(stats_output, savepath)
 
-def process_lmp(gametype, zipfile_path, zf, lmpname):
+def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 
 	gamepath, exe = GAME_PATHS[gametype]
-	bat_file = write_batch_file(gamepath, exe, lmpname)
+	bat_file = write_batch_file(gamepath, exe, lmpname, pwad)
 	stats_output = os.path.join(gamepath, "OUT.TXT")
 
 	try:

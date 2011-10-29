@@ -239,13 +239,41 @@ class CommandPipeline:
 	def is_empty(self):
 		return len(self.pipeline) == 0
 
-def identify_game_type(filename):
-
-	for game in GAME_PATHS.keys():
-		if filename.startswith(game + "/"):
-			return game
+def find_from_prefix(set, filename):
+	for prefix in set.keys():
+		if filename.startswith(prefix + "/"):
+			return prefix
 
 	return None # unknown!
+
+def identify_game_type(filename):
+	gametype = find_from_prefix(GAME_PATHS, filename)
+
+	if gametype is not None:
+		return gametype
+
+	# Might be a PWAD:
+
+	pwad = find_from_prefix(PWADS, filename)
+
+	if pwad is not None:
+		filename, gametype = PWADS[pwad]
+
+		return gametype
+
+	# Unknown!
+
+	return None
+
+def get_pwad_filename(filename):
+	pwad = find_from_prefix(PWADS, filename)
+
+	if pwad is None:
+		return None
+	else:
+		filename, gametype = PWADS[pwad]
+
+		return filename
 
 def process_zipfile(filename, dir, callback):
 
@@ -253,6 +281,8 @@ def process_zipfile(filename, dir, callback):
 
 	if not gametype:
 		return
+
+	pwad = get_pwad_filename(filename)
 
 	fullpath = os.path.join(dir, filename)
 
@@ -264,7 +294,7 @@ def process_zipfile(filename, dir, callback):
 			continue
 
 		if subfile.lower().endswith(".lmp"):
-			callback(gametype, fullpath, zf, subfile)
+			callback(gametype, fullpath, zf, subfile, pwad)
 
 	zf.close()
 
