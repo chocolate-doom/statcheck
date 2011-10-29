@@ -112,6 +112,7 @@ def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 
 	pipeline.call(cmd, process_complete)
 
+os.putenv("SDL_VIDEO_WINDOW_POS", "100,100")
 output_counter = 0
 passed, failed = 0, 0
 pipeline = CommandPipeline(CONCURRENT_PROCESSES)

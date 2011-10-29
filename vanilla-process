@@ -98,6 +98,7 @@ def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 
 	pipeline.call("%s -exit %s" % (DOSBOX, bat_file), process_complete)
 
+os.putenv("SDL_VIDEO_WINDOW_POS", "100,100")
 output_counter = 0
 
 pipeline = CommandPipeline(CONCURRENT_PROCESSES)
