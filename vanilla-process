@@ -98,7 +98,9 @@ def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 
 	pipeline.call("%s -exit %s" % (DOSBOX, bat_file), process_complete)
 
-os.putenv("SDL_VIDEO_WINDOW_POS", "100,100")
+# Use SDL's dummy video driver that does not open a window:
+os.putenv("SDL_VIDEODRIVER", "dummy")
+
 output_counter = 0
 
 pipeline = CommandPipeline(CONCURRENT_PROCESSES)
