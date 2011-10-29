@@ -92,6 +92,10 @@ def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 		os.remove(bat_file)
 		os.remove(stats_output)
 
+		relpath = os.path.relpath(zipfile_path, COMPETN_PATH)
+		print "%-50s%-15s" % (relpath, lmpname)
+		sys.stdout.flush()
+
 	pipeline.call("%s -exit %s" % (DOSBOX, bat_file), process_complete)
 
 output_counter = 0
