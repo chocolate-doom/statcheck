@@ -21,10 +21,11 @@ import sys
 import subprocess
 import fcntl
 from select import select
-from fnmatch import fnmatch
+import fnmatch
 import zipfile
 import shutil
 import os
+import re
 
 from config import *
 
@@ -298,8 +299,13 @@ def process_zipfile(filename, dir, callback):
 
 	zf.close()
 
-def find_all_zips(path, pattern):
+def patterns_to_regexp(patterns):
+	"""Given a list of patterns, make a regexp that matches any one."""
+	regexps = [fnmatch.translate(p) for p in patterns]
+	return re.compile("(%s)" % ("|".join(regexps)))
 
+def find_all_zips(path, regexp):
+	"""Find .zip files in given path matching the given regexp."""
 	result = []
 
 	for dirpath, dirnames, filenames in os.walk(path):
@@ -313,21 +319,20 @@ def find_all_zips(path, pattern):
 			if identify_game_type(relpath) is None:
 				continue
 
-			if fnmatch(relpath, pattern):
-				result.append(relpath)
-
-	return result
+			if regexp.match(relpath):
+				yield relpath
 
 def process_all_zips(path, callback):
 
 	if len(sys.argv) > 1:
-		pattern = sys.argv[1]
+		patterns = sys.argv[1:]
 	else:
-		pattern = "*"
+		patterns = ["*"]
 
 	# Find the ZIP files to process.
 
-	zips = find_all_zips(path, pattern)
+	regexp = patterns_to_regexp(patterns)
+	zips = list(find_all_zips(path, regexp))
 
 	# Variables used by the processing function.
 
