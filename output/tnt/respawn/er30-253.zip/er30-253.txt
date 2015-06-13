@@ -5,7 +5,7 @@ MAP30
 Time: 2:53 (par: 3:00)
 
 Player 1 (Green):
-	Kills: 64 / 60 (106%)
+	Kills: 60 / 60 (100%)
 	Items: 2 / 2 (100%)
 	Secrets: 1 / 1 (100%)
 

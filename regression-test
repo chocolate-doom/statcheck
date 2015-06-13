@@ -28,13 +28,29 @@
 # or fail this test.
 
 import os
+import re
 import sys
 from common import *
 from config import *
 
+EXCEPTIONS_PARSE_RE = re.compile(r'(\S+)\s+(\S+)')
+
 GREEN = '\033[92m'
 RED = '\033[91m'
 COLOR_END = '\033[0m'
+
+def read_exceptions(filename):
+	"""Read exceptions config file."""
+	with open(filename) as f:
+		result = {}
+		for line in f:
+			if line.strip().startswith("#"):
+				continue
+			match = EXCEPTIONS_PARSE_RE.match(line)
+			if match:
+				result[match.group(1)] = match.group(2)
+
+		return result
 
 def read_file(filename):
 	result = []
@@ -96,6 +112,10 @@ def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 	if pwad is not None:
 		cmd += " -file %s" % os.path.join(gamepath, pwad)
 
+	zipfile_relpath = os.path.relpath(zipfile_path, COMPETN_PATH)
+	if zipfile_relpath in exceptions:
+		cmd += " -gameversion %s" % exceptions[zipfile_relpath]
+
 	def process_complete(exit_code, stdout, stderr):
 		global passed, failed
 
@@ -120,6 +140,7 @@ os.putenv("SDL_VIDEODRIVER", "dummy")
 
 output_counter = 0
 passed, failed = 0, 0
+exceptions = read_exceptions("exceptions.cfg")
 pipeline = CommandPipeline(CONCURRENT_PROCESSES)
 
 process_all_zips(COMPETN_PATH, process_lmp)
