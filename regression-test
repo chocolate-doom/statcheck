@@ -27,6 +27,9 @@
 # for Vanilla Doom. A summary is outputted of the demos that pass
 # or fail this test.
 
+from __future__ import division, absolute_import
+from __future__ import print_function, unicode_literals
+
 import os
 import re
 import sys
@@ -85,7 +88,7 @@ def print_result(zipfile_path, lmpname, success):
 	else:
 		success_string = RED + "FAIL" + COLOR_END
 
-	print "%-50s%-15s%s" % (zipfile_path, lmpname, success_string)
+	print("%-50s%-15s%s" % (zipfile_path, lmpname, success_string))
 	sys.stdout.flush()
 
 # Run the specified demo and check the output is correct.
@@ -151,5 +154,5 @@ process_all_zips(COMPETN_PATH, process_lmp)
 
 pipeline.finish()
 
-print "%i demo(s) passed, %i demo(s) failed." % (passed, failed)
+print("%i demo(s) passed, %i demo(s) failed." % (passed, failed))
 

@@ -17,6 +17,9 @@
 # 02111-1307, USA.
 #
 
+from __future__ import division, absolute_import
+from __future__ import print_function, unicode_literals
+
 import sys
 import subprocess
 import fcntl
@@ -257,5 +260,5 @@ def process_all_zips(path, callback):
 		except KeyboardInterrupt as e:
 			raise e
 		except Exception as e:
-			print e
+			print(e)
 

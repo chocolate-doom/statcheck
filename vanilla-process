@@ -26,6 +26,9 @@
 # and the output recorded to a file. The file is then stored in the
 # output/ tree for future reference.
 
+from __future__ import division, absolute_import
+from __future__ import print_function, unicode_literals
+
 import shutil
 import os
 from config import *
@@ -93,7 +96,7 @@ def process_lmp(gametype, zipfile_path, zf, lmpname, pwad):
 		os.remove(stats_output)
 
 		relpath = os.path.relpath(zipfile_path, COMPETN_PATH)
-		print "%-50s%-15s" % (relpath, lmpname)
+		print("%-50s%-15s" % (relpath, lmpname))
 		sys.stdout.flush()
 
 	pipeline.call("%s -exit %s" % (DOSBOX, bat_file), process_complete)
