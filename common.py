@@ -29,92 +29,6 @@ import re
 
 from config import *
 
-import wx
-
-# Simple wxPython status window, with buttons to pause and abort processing.
-# The reason for having this is that many windows tend to briefly pop up
-# as each demo is processed; it's therefore very difficult to get to a
-# terminal to type ^Z or ^C. Having a small GUI app allows this to be
-# done using the mouse.
-
-class StatusWindow(wx.Frame):
-	def __init__(self, *args):
-		wx.Frame.__init__(self, *args, size=(300,100))
-
-		panel = wx.Panel(self)
-		box = wx.BoxSizer(wx.VERTICAL)
-
-		self.status_label = wx.StaticText(panel, -1, "Processing...")
-		box.Add(self.status_label, 0, wx.ALL, 10)
-
-		buttons_box = wx.BoxSizer(wx.HORIZONTAL)
-
-		self.pause_button = wx.Button(panel, wx.ID_CLOSE, "Pause")
-		self.pause_button.Bind(wx.EVT_BUTTON, self.OnPause)
-		buttons_box.Add(self.pause_button)
-
-		stop = wx.Button(panel, wx.ID_CLOSE, "Abort")
-		stop.Bind(wx.EVT_BUTTON, self.OnStop)
-		buttons_box.Add(stop, 0, wx.LEFT, 10)
-
-		box.Add(buttons_box, 0, wx.ALL, 10)
-
-		panel.SetSizer(box)
-		panel.Layout()
-
-	def SetCallbacks(self, pause, stop):
-		self.pause_callback = pause
-		self.stop_callback = stop
-
-	def SetStatus(self, label):
-		self.status_label.SetLabel(label)
-
-	def SetPauseStatus(self, paused):
-		if paused:
-			self.pause_button.SetLabel("Resume")
-		else:
-			self.pause_button.SetLabel("Pause")
-
-	def OnPause(self, event):
-		self.pause_callback()
-		pass
-
-	def OnStop(self, event):
-		self.stop_callback()
-		pass
-
-class StatusApp(wx.App):
-	def __init__(self, idle_callback):
-		self.idle_callback = idle_callback
-		self.paused = False
-
-		# Don't redirect stdout/stderr:
-		wx.App.__init__(self, False)
-
-	def OnInit(self):
-		self.window = StatusWindow(None, -1, "statcheck status")
-		self.window.Show(True)
-
-		self.SetTopWindow(self.window)
-		self.Bind(wx.EVT_IDLE, self.OnIdle)
-		self.window.SetCallbacks(self.PauseCallback, self.StopCallback)
-
-		return True
-
-	def PauseCallback(self):
-		self.paused = not self.paused
-		self.window.SetPauseStatus(self.paused)
-
-	def StopCallback(self):
-		self.ExitMainLoop()
-
-	def SetStatus(self, *args):
-		self.window.SetStatus(*args)
-
-	def OnIdle(self, event):
-		if not self.paused:
-			self.idle_callback()
-
 def set_nonblocking(fileno):
 	fl = fcntl.fcntl(fileno, fcntl.F_GETFL)
 	fcntl.fcntl(fileno, fcntl.F_SETFL, fl | os.O_NONBLOCK)
@@ -334,43 +248,14 @@ def process_all_zips(path, callback):
 	regexp = patterns_to_regexp(patterns)
 	zips = list(find_all_zips(path, regexp))
 
-	# Variables used by the processing function.
-
-	container = {
-		"processed": 0
-	}
-
-	zip_iterator = iter(zips)
-
 	# Processing function. Each time this is called, another ZIP
 	# file will be processed.
 
-	def walk_next():
-		try:
-			zippath = zip_iterator.next()
-		except StopIteration:
-			app.ExitMainLoop()
-			return
-
+	for zippath in zips:
 		try:
 			process_zipfile(zippath, path, callback)
 		except KeyboardInterrupt as e:
 			raise e
 		except Exception as e:
 			print e
-		finally:
-			container["processed"] += 1
-
-			pct = float(container["processed"]) * 100 / len(zips)
-
-			app.SetStatus("%i / %i ZIP files processed (%i%%)" % (
-				container["processed"],
-				len(zips),
-				pct))
-
-	# Create the GUI app. The walk_next function above will be called
-	# as an idle function by the GUI main loop, to process the ZIPs.
-
-	app = StatusApp(walk_next)
-	app.MainLoop()
 
